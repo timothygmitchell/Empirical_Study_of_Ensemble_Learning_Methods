@@ -18,7 +18,7 @@ I evaluated 14 models for classification:
 * Conditional Inference Tree
 * Naive Bayes
 
-The setting of the experiment was the Wisconsin Diagnostic Breast Cancer data set, a binary classification problem with 30 numeric predictors describing benign and malignant tumor samples. I have also prepared the code to accomodate other binary classification problems easily. I hope to extend the experiment one day to multiclass classification and regression.
+The setting of the experiment was the Wisconsin Diagnostic Breast Cancer data set, a binary classification problem with 30 numeric predictors and observations from benign and malignant tumor samples. The code can also accomodate other binary classification problems. I hope to extend the experiment to multiclass classification and regression.
 
 The best simple voting ensemble, discovered by repeated k-fold cross-validation, was a combination of elastic net, support vector machine with polynomial kernel, and random forest. This came as a surprise, since these were not the #1, #2, and #3 models, but rather the #1, #2, and #8 models.
 

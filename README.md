@@ -28,6 +28,6 @@ Accuracy was measured using Cohen's kappa, which is appropriate for imbalanced c
 
 ![Figure 2](https://github.com/timothygmitchell/Empirical_Study_of_Ensemble_Learning_Methods/blob/main/HistEnsemblePerformance.png)
 
-For a set of *N* learners, one can prepare 2^*N* - 1 meaningful combinations -- including standalone base learners and the set of all possible ensembles. If one wishes to avoid ties, it is convenient to consider only the ensembles with an odd number of models. Then the number of combinations is (2^N - 1)/2. I estimated the generalization error for all (2^14 - 1)/2 simple voting ensembles prepared from the 14 base learners in Figure 1, and found that most of them did *worse* than the best base learner in the system.
+For a set of *N* learners, one can prepare 2^*N* - 1 meaningful combinations -- including standalone base learners and the set of all possible ensembles. If one wishes to avoid ties, it is convenient to ignore the ensembles with an even number of models. Then the number of configurations is (2^N - 1)/2. I estimated the generalization error for all (2^14 - 1)/2 configurations of the 14 base learners in Figure 1, and found that most of them did *worse* than the best base learner in the system.
 
 I would like to prepare a stacked generalization model, and I would to see if the population of ensembles has a similar distribution, or if stacking protects the ensemble from error.
